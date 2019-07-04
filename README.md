@@ -2,4 +2,4 @@
 
 
 ## Things to do:
-- [x] Update description
+- [ ] Update description
