@@ -1,0 +1,70 @@
+body {
+  font-family: Calibri;
+  color: #757575;
+  font-size: 15px;
+}
+
+input[type=text]{
+  font-family: Calibri;
+  width: 100px;
+  padding: 5px 15px;
+  margin: 8px 3px 8px 5px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1.5px solid #757575;
+  font-size: 15px;
+  display: inline;
+}
+
+input[type=checkbox]{
+  margin: 18px 3px 18px 5px;
+}
+
+button {
+  font-family: Calibri;
+  width: 160px;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  background-color: white; 
+  color: #757575; 
+  border: 1.5px solid #757575;
+  border-radius: 20px;
+  margin: 30px 5px 30px 5px;
+}
+
+button:hover {
+  background-color: #757575;
+  color: white;
+}
+
+button:hover a{
+  background-color: #757575;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #757575;
+  transition-duration: 0.5s;
+}
+
+.displayNone {
+  display: none;
+}
+
+.topic {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#generatedEmail {
+  border: 2px solid #58afce;
+  width: 50%;
+  padding: 10px;
+  display: none;
+}

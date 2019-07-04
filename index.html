@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sin App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<!-- welcome -->
+<p>Hello
+    <input type="text" id="name" placeholder="Name">,</p>
+
+<label for="regarding" id="regarding">Regarding your ticket:
+    <input type="text" class="displayNone" id="ticketNumber" placeholder="xxxxxx">
+</label>
+<br>
+
+<!-- option1 -->
+<input type="checkbox" id="option1">
+<label for="option1"> - you have not linked any KA to this ticket.</label>
+
+<div id="content1" class="displayNone">
+    <p>Please remember that each time you are logging ticket, it is mandatory to follow instructions below:
+        <br> Service and Configuration Item in the ticket need to be exactly the same as in the knowledge article you linked.
+        <br> Example KA:</p>
+    <img src="images/opcja1_1.jpg">
+    <br>
+    <img src="images/opcja1_2.jpg">
+    <br>
+    <img src="images/opcja1_3.jpg">
+    <br>
+    <p>In case you are not sure if KA is already linked, simply navigate on the left side of the ticketing tool to:</p>
+    <img src="images/opcja1_4.jpg">
+    <br>
+    <p>And check if your KA is linked.</p>
+    <br>
+</div>
+<br>
+
+<!-- option2 -->
+<input type="checkbox" id="option2">
+<label for="checkbox2"> - you have not provided admin rights for installation of</label>
+<input type="text" id="appName" placeholder="App Name">.
+<br>
+
+<div id="content2" class="displayNone">
+    <p>This application is not marked as STANDARD in TIP.
+        <br> In case an application is not visible in STANDARD section, a ticket have to be sent to GBL ITAM team, accordingly with KA#5213.</p>
+    <img src="images/opcja2_1.png">
+    <br>
+    <p>Please remember that you are allowed to grant admin rights only for applications that are STANDARD.</p>
+    <br>
+</div>
+
+<!-- option3 -->
+<input type="checkbox" id="option3">
+<label for="checkbox2"> - you have not provided anough data in a description.</label>
+<br>
+
+<div id="content3" class="displayNone">
+    <p>Please remember that each time you are sending ticket to a resolving team, it is your duty to collect all necessary details such as:</p>
+    <ul>
+        <li>contact details for the user, location;</li>
+        <li> user is connecting to (LAN cable, wi-fi, home network);</li>
+        <li>device name/server name if user is on Citrix or uses a Citrix application such as Oracle, SAP;</li>
+        <li>exact website/SharePoint site address (should be typed in the description, not pasted on the screenshot);</li>
+        <li>screenshots of an error message and exact issue description (pasting an email from user/chat transcription is not enough!);</li>
+        <li>number of users affected and affected logins examples (if not all users at site are affected, it would be perfect to provide examples of IDs of users affected and not affected by the problem for comparison);</li>
+        <li>troubleshooting performed – follow the steps from the knowledge article even if there are multiple users affected.</li>
+    </ul>
+    <br>
+</div>
+
+<!-- option4 -->
+<input type="checkbox" id="option4">
+<label for="checkbox4"> - you have linked a KA on a Core profile to a ticket where you should use one on an Assisted profile.</label>
+<br>
+
+<div id="content4" class="displayNone">
+    <p>Please remember that each time you are sending ticket to a resolving team or save it on your own queue, it is mandatory to link a KA on an Assisted profile.</p>
+    <br> As a reminder:
+    <br>
+    <ul>
+        <li>We close ticket from our end within the first contact – FTF = KA on Core or Assisted profile (preferred Core one);</li>
+        <li>We save ticket (using Defer or Save button) on the pending = KA on Assisted profile,</li>
+        <li>We send ticket internally - escalate it further (using Internal button) = KA on Assisted profile.</li>
+    </ul>
+    <br>
+    <p>Example KAs:</p>
+    <br>
+    <img src="images/opcja4_1.jpg">
+    <br>
+    <img src="images/opcja4_2.jpg">
+    <br>
+</div>
+<br>
+
+<button id="convertButton" onclick="convert()">Convert</button>
+
+<div id="generatedEmail">
+    <div id="dearName"></div>
+    <div id="topicOption1" class="topic"></div>
+    <div id="contentOption1"></div>
+    <div id="topicOption2" class="topic"></div>
+    <div id="contentOption2"></div>
+    <div id="topicOption3" class="topic"></div>
+    <div id="contentOption3"></div>
+    <div id="topicOption4" class="topic"></div>
+    <div id="contentOption4"></div>
+    <div id="closure" class="displayNone">
+        <p>If you have any questions or concerns, please let me know.
+            <br> Thanks,
+        </p>
+    </div>
+</div>
+    
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
